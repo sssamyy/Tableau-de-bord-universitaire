@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style3.css') }}">
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Sidebar -->
+        <aside class="navbar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/USTHB.png') }}" alt="USTHB Logo" width="20" height="20">
+                <h3 class="logotext">Pravan University</h3>
+            </div>
+            <div class="navelements">
+                <a href="/" class="as">
+                    <div class="arrange">
+                        <p>Accueil</p>
+                    </div>
+                </a>
+                <a href="/specialite" class="as">
+                    <div class="arrange">
+                        <p>Specialités</p>
+                    </div>
+                </a>
+                <a href="/etudiant" class="as">
+                    <div class="arrange">
+                        <p>Étudiants</p>
+                    </div>
+                </a>
+                <a href="/resultats" class="as">
+                    <div class="arrange">
+                        <p>Résultats</p>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="card1">
+                <h2>Bienvenue</h2>
+                <button id="refresh" onclick="loadData()">Actualiser</button>
+            </div>
+
+            {% block content %}
+            {% endblock %}
+
+            {% block no_content %}
+            <div class="card2">
+                <h2>Pravan University</h2>
+                <p>
+                    Lien pour la vidéo démo : 
+                    <a href="https://youtu.be/4rjAgU6arvs?si=j2nTpLWpOZ-mqSlc" target="_blank">
+                        Voir la vidéo
+                    </a>
+                    <br>
+                    Lien pour le mini-rapport : <a href="{{ url_for('static', filename='BENDAHGANE_SAMI_pravan_rapport.pdf') }}" target="_blank"">Télécharger</a>
+                </p>
+            </div>
+            {% endblock %}
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

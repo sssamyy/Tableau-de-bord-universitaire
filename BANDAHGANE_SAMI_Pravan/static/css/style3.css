@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    background-color: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* 200px for sidebar, remaining space for content */
+    grid-template-areas: "sidenav main";
+    height: 100vh;
+}
+.navbar {
+    position: fixed; 
+    top: 0;
+    left: 10px; 
+    width: 200px; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5vw;
+    justify-items: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
+    margin-left: 0; 
+}
+
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 100%;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.card1{
+    height: 60px;
+    border-radius: 15px;
+}
+
+.card1 h2{
+    background-color: #d0e1e9;
+}
+
+.second{
+    margin-top: 50px;
+}
+#card5{
+margin-left: 10px;
+
+
+
+}
+#card6{
+margin-top: 50px;
+margin-left: 30px;
+}
+
+.bubble{
+display: flex;
+flex-direction: column;
+}
+.card1 {
+    margin: 20px;
+    padding: 0;
+}
+
+button {
+    width: 130px;
+    height: 50px;
+    border-radius: 25px;
+    color: black;
+    background-color: #c3bebe;
+}
+
+
+
+.card2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%; 
+    width: 80%; 
+    background-color: #d0e1e9;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logotext {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.navelements {
+    height: 500px;
+    margin-top: 50px;
+}
+
+.navelements a {
+    margin: 20px;
+}
+
+
+li {
+    list-style: none;
+    margin-top: 15px;
+    background-color: #d0e1e9;
+}
+
+ul {
+    margin: 10px 40px;
+    background-color: #d0e1e9;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.head, .bottom {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d0e1e9;
+    margin: 25px 25px;
+}
+
+.arrange {
+    display: flex;
+}
+
+.arrange p {
+    padding-left: 7px;
+}
+
+.bas {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first {
+    display: flex;
+}
+
+.second {
+    display: flex;
+}
+
+.all {
+    display: flex;
+    margin-top: 10px;
+}
+
+.imageicon {
+    width: 188px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.card1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background-color: #d0e1e9;
+    height: 60px;
+    border-radius: 15px;
+}
+
+
+
+.card2 h2, .card2 p {
+    margin: 0; 
+    padding: 10px; 
+    font-size: 2rem;
+    margin: 10px 0;
+    background-color: #d0e1e9;
+}
+
+#card5 {
+    margin-left: 10px;
+   
+}
+
+#card6 {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.bubble {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+th, table, td {
+    text-align: center;
+    background-color: #d0e1e9;
+    border-radius: 15px;
+}
+
+table {
+    margin-top: 30px;
+}
+
+.wrapper3 h2 {
+    margin-top: 30px;
+}
+
+.gestion-etudiants {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #798fa9;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin: 30px 0 10px;
+    color: #333;
+}
+
+/* Form Styles */
+form {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.input-field, .select-field {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus, .select-field:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #357ab8;
+}
+
+.btn-secondary {
+    background-color: #f5a623;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #d48b1a;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.student-table th, .student-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.student-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.inline-form {
+    display: inline;
+}
+#bar-chart-8, #bar-chart, #line-chart-9, #line-chart-3, #bar2-chart, #bar3-chart, #bubble-chart, #pie-chart-avg, #doughnut-chart, #horizontal-bar-chart {
+    background-color: #d0e1e9;
+    border-radius: 20px;
+    color: black;
+    margin: 5px 20px;
+}
+/* Style for Modifier and Supprimer buttons */
+a.btn-warning {
+    font-size: 0.85em; /* Smaller text size */
+    padding: 5px 10px; 
+  
+    margin: 2px 0; 
+    display: inline-block; 
+    width: auto; 
+    text-align: center; 
+    white-space: nowrap; 
+    background-color: #ada4a5; /* Bootstrap danger color */
+}
+ button.btn-danger {
+    font-size: 0.85em; /* Smaller text size */
+    padding: 5px 10px; 
+  
+    margin: 2px 0; 
+    display: inline-block; 
+    width: auto; 
+    text-align: center; 
+    white-space: nowrap; 
+    background-color: #dc3545; /* Bootstrap danger color */
+}
+
+
+
+/* Hover effects */
+a.btn-warning:hover, button.btn-danger:hover {
+    opacity: 0.9; 
+}
+
+/* Table adjustments (if needed for layout) */
+td {
+    vertical-align: middle; /* Ensure buttons align with table content */
+    text-align: center; /* Center align content in Actions column */
+}
+
+
+/* Optional: Add hover effect */
+a.btn.btn-warning:hover, form button.btn.btn-danger:hover {
+    opacity: 0.8; /* Slightly dim on hover */
+}
+/* Style the search field */
+input.search-field {
+    font-size: 1em; /* Match the size of ajouter fields */
+    padding: 8px; /* Add padding for a comfortable size */
+    width: 100%; /* Full width of its container */
+    border: 1px solid #ccc; /* Light border for a clean look */
+    border-radius: 5px; /* Rounded corners for consistency */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-bottom: 10px; /* Space below the input */
+}
+
+/* Highlight the field on focus */
+input.search-field:focus {
+    border-color: #4CAF50; /* Match the style of ajouter fields */
+    outline: none; /* Remove default outline */
+}
+
+/* Style the search button */
+button.btn.btn-secondary {
+    font-size: 0.9em; /* Slightly smaller text size */
+    padding: 6px 12px; /* Compact padding */
+    border-radius: 5px; /* Rounded corners for consistency */
+    background-color: #6c757d; /* Default secondary color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+button.btn.btn-secondary:hover {
+    background-color: #5a6268; /* Slightly darker shade */
+    opacity: 0.9; /* Visual feedback */
+}
+
+form.search-container {
+    display: flex; 
+    gap: 10px; 
+    align-items: center;
+}

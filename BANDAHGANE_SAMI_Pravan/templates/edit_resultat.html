@@ -1,0 +1,26 @@
+{% extends "page2.html" %}
+
+{% block title %}Modifier un Étudiant{% endblock %}
+
+{% block content %}
+<div class="card2">
+    <h2> Modifier les Informations de l'Étudiant</h2>
+    <form method="POST">
+        <div class="form-group">
+            <input type="number" class="input-field" name="annee" value="{{ resultat[0] }}" required>
+            <input type="text" class="input-field"name="nom" value="{{ resultat[2] }}" required>
+            <input type="text" class="input-field"name="nom" name="prenom" value="{{ resultat[3] }}" required>
+            <select name="sexe" class="input-field"name="nom" required>
+                <option value="M" {% if resultat[4] == 'M' %}selected{% endif %}>Male</option>
+                <option value="F" {% if resultat[4] == 'F' %}selected{% endif %}>Female</option>
+            </select>
+            <input type="text" class="input-field"name="nom" name="specialite" value="{{ resultat[5] }}" required>
+            <input type="number" class="input-field"name="nom" step="0.01" name="moyenne" value="{{ resultat[6] }}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Mettre à Jour</button>
+    </form>
+</div>
+{% endblock %}
+{% block no_content %}
+
+{% endblock %}

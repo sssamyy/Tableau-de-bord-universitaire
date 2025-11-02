@@ -1,0 +1,40 @@
+{% extends "page2.html" %}
+{% block extra_head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
+{% endblock %}
+{% block content %}
+
+<div class="all">
+    <div class="four">
+        <div class="first">
+            <div class="card" id="card8">  
+                <div class="card-content">  
+                    <canvas id="bar-chart-8" height="250" width="450"></canvas>
+                </div>              
+            </div>
+            <div class="card" id="card9">  
+                <div class="card-content" >
+                    <canvas id="line-chart-9" height="250" width="450"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="card" id="card10">      
+                <div class="card-content" >
+                    <canvas id="pie-chart-avg" height="250" width="450"></canvas>  
+                </div>
+            </div>
+            <div class="card" id="card11">      
+                <div class="card-content" >
+                    <canvas id="doughnut-chart" height="250" width="450"></canvas>  
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+</div>
+{% endblock %}
+{% block no_content %}
+
+{% endblock %}
